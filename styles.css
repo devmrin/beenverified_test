@@ -1,8 +1,19 @@
+/* CSS Variables */
 :root {
-  --theme-background-1: #004A80;
+  --theme-color-zero: #ffffff;
+  --theme-color-one: #004A80;
+  --theme-color-two: #F6BC25;
+  --theme-color-three: #F2DA56;
+  --theme-color-four: #A6953B;
+  --theme-color-five: #00000033;
+
   --text-color-white: #ffffff;
+  --text-color-blue: #004A80;
+  --text-color-yellow: #F6BC25;
+  --text-color-gray: #9B9B9B;
 }
 
+/* Reset Style */
 * {
   margin: 0;
   padding: 0;
@@ -10,14 +21,37 @@
   font-family: Helvetica, sans-serif;
 }
 
+body {
+  font-size: 62.5%;
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 5.2em;
+}
+
+h3 {
+  font-size: 2.4em;
+}
+
+p {
+  font-size: 1.6em;
+}
+
+/* Helper */
+.text-yellow {
+  color: var(--text-color-yellow)
+}
+
+/* Header Section */
 header {
-  background: var(--theme-background-1);
+  background: var(--theme-color-one);
   color: var(--text-color-white);
+  padding: 20px 0 95px 0; 
 }
 
 nav {
   margin: 0 auto;
-  padding: 20px 0;
   max-width: 980px;
   display: flex;
   align-items: center;
@@ -40,6 +74,77 @@ nav {
   width: 23px;
   margin-left: 25px;
 }
+
+.hero-container {
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.heading {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.subheading {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.form {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+
+}
+
+.email-input {
+  flex:1;
+  margin-right: 20px;
+  padding-left: 12px;
+  height: 70px;
+  border: none;
+  box-shadow: inset 0 -1px 4px 0 var(--theme-color-five);
+  border-radius: 3px;
+  font-size: 1.6em;
+  color: var(--text-color-gray);
+  letter-spacing: 2px;
+  line-height: 18px;
+}
+
+.email-input:focus {
+  border: 2px solid var(--theme-color-two);
+  outline-color: var(--theme-color-two);
+}
+
+.submit-btn {
+  cursor: pointer;
+  width: 180px;
+  height: 70px;
+  color: var(--text-color-blue);
+  font-size: 2.4em;
+  background-image: linear-gradient(225deg, var(--theme-color-three) 0%, var(--theme-color-two) 100%);
+  box-shadow: 0 3px 0 0 var(--theme-color-four), inset 0 1px 0 0 var(--theme-color-zero);
+  border-radius: 6px;
+}
+
+.submit-btn:hover {
+  background: var(--theme-color-three);
+  box-shadow: 0 3px 0 0 var(--theme-color-four), inset 0 1px 0 0 var(--theme-color-zero);
+}
+
+.submit-btn:active {
+  background: var(--theme-color-two);
+  box-shadow: 0 3px 0 0 var(--theme-color-four), inset 0 1px 0 0 var(--theme-color-zero);
+}
+
+.hero-info {
+  margin-top: 30px;
+}
+
+
+
+
+
 
 
 
