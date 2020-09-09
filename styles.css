@@ -1,0 +1,45 @@
+:root {
+  --theme-background-1: #004A80;
+  --text-color-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+  background: var(--theme-background-1);
+  color: var(--text-color-white);
+}
+
+nav {
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: 980px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 25px;
+  width: 173px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  height: 23px;
+  width: 23px;
+  margin-left: 25px;
+}
+
+
+
