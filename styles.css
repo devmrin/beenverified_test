@@ -47,7 +47,7 @@ p {
 header {
   background: var(--theme-color-one);
   color: var(--text-color-white);
-  padding: 20px 0 95px 0; 
+  padding: 20px 20px 95px 20px; 
 }
 
 nav {
@@ -94,7 +94,6 @@ nav {
   margin-top: 30px;
   text-align: center;
   display: flex;
-
 }
 
 .email-input {
@@ -122,6 +121,7 @@ nav {
   height: 70px;
   color: var(--text-color-blue);
   font-size: 2.4em;
+  border:none;
   background-image: linear-gradient(225deg, var(--theme-color-three) 0%, var(--theme-color-two) 100%);
   box-shadow: 0 3px 0 0 var(--theme-color-four), inset 0 1px 0 0 var(--theme-color-zero);
   border-radius: 6px;
@@ -139,10 +139,51 @@ nav {
 
 .hero-info {
   margin-top: 30px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.hero-info-icon {
+  height: 15px;
+  width: 19px;
+  margin-right: 10px;
+}
+
+@media(max-width: 768px) {
+  h1 {
+    font-size: 4.8em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
 }
 
 
+@media(max-width: 600px) {
+  h1 {
+    font-size: 3.8em;
+  }
 
+  h3 {
+    font-size: 1.8em;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .email-input {
+    min-height: 50px;
+    margin-right: 0;
+  }
+  
+  .submit-btn {
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+  }
+}
 
 
 
