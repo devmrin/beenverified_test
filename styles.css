@@ -1,3 +1,27 @@
+/* Fonts */
+@font-face {
+  font-family: 'HelveticaNeue-Bold';
+  src: url('./fonts/HelveticaNeue-Bold.eot');
+  src: url('./fonts/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/HelveticaNeue-Bold.woff2') format('woff2'),
+      url('./fonts/HelveticaNeue-Bold.woff') format('woff'),
+      url('./fonts/HelveticaNeue-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('./fonts/HelveticaNeue-Light.eot');
+  src: url('./fonts/HelveticaNeue-Light.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/HelveticaNeue-Light.woff2') format('woff2'),
+      url('./fonts/HelveticaNeue-Light.woff') format('woff'),
+      url('./fonts/HelveticaNeue-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
 /* CSS Variables */
 :root {
   --theme-color-zero: #ffffff;
@@ -18,16 +42,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Helvetica, sans-serif;
 }
 
 body {
   font-size: 62.5%;
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif
 }
 
 /* Heading Styles */
 h1 {
   font-size: 5.2em;
+  font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
 }
 
 h3 {
@@ -41,6 +66,10 @@ p {
 /* Helper */
 .text-yellow {
   color: var(--text-color-yellow)
+}
+
+.text-bold {
+  font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
 }
 
 /* Header Section */
@@ -140,7 +169,7 @@ nav {
 .hero-info {
   margin-top: 30px;
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
 }
 
 .hero-info-icon {
@@ -157,6 +186,10 @@ nav {
   h3 {
     font-size: 2em;
   }
+
+  header {
+    padding: 20px 25px 60px 25px; 
+  }
 }
 
 
@@ -167,6 +200,10 @@ nav {
 
   h3 {
     font-size: 1.8em;
+  }
+
+  header {
+    padding-bottom: 40px; 
   }
 
   .form {
