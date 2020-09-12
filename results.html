@@ -46,7 +46,6 @@
         searched for.
       </p>
       <div class="results-user-container">
-        <!-- user-icon can be an image -->
         <div class="results-user-icon-container">
           <img
             class="results-user-icon"
@@ -67,7 +66,8 @@
           </div>
 
           <div class="results-user-details-container">
-            <div class="results-user-details-row">
+            <div class="results-user-details-column">
+              <!-- Address -->
               <div class="results-user-details-card">
                 <div
                   class="text-bold text-blue results-user-details-card-title"
@@ -79,21 +79,7 @@
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </div>
               </div>
-              <div class="results-user-details-card">
-                <div
-                  class="text-bold text-blue results-user-details-card-title"
-                >
-                  Phone Numbers
-                </div>
-                <div
-                  class="results-user-details-card-body"
-                  id="user-phone-container"
-                >
-                  <span class="text-blue user-phone">(555) 555-5555</span>
-                </div>
-              </div>
-            </div>
-            <div class="results-user-details-row">
+              <!-- Email -->
               <div class="results-user-details-card">
                 <div
                   class="text-bold text-blue results-user-details-card-title"
@@ -104,6 +90,24 @@
                   loremipsum@dolorsit.com
                 </div>
               </div>
+            </div>
+            <div class="results-user-details-column">
+              <!-- Phone Numbers -->
+              <div class="results-user-details-card">
+                <div
+                  class="text-bold text-blue results-user-details-card-title"
+                >
+                  Phone Numbers
+                </div>
+                <div
+                  class="results-user-details-card-body"
+                  id="user-phone-container"
+                >
+                  <div class="text-blue user-phone">(555) 555-5555</div>
+                  <div class="text-blue user-phone">(555) 555-5555</div>
+                </div>
+              </div>
+              <!-- Relatives -->
               <div class="results-user-details-card">
                 <div
                   class="text-bold text-blue results-user-details-card-title"
@@ -114,7 +118,8 @@
                   class="results-user-details-card-body"
                   id="user-relatives-container"
                 >
-                  <span class="user-relative">Jane Smith</span>
+                  <div class="user-relative">Jane Smith</div>
+                  <div class="user-relative">Jane Smith</div>
                 </div>
               </div>
             </div>

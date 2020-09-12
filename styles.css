@@ -332,26 +332,37 @@ footer {
 .results-user-details-card-body {
   font-size: 1.8em;
   margin-top: 5px;
+  line-height: 26px;
+}
+
+.results-user-details-card-body {
+  min-height: 100px;
+  max-width: 360px;
 }
 
 .results-user-details-container {
   margin-top: 20px;
-}
-
-.results-user-details-row {
   display: flex;
 }
 
-.results-user-details-row:nth-of-type(2) {
-  margin-top: 20px;
+.results-user-details-column {
+  flex: 1;
+}
+
+.results-user-details-column:nth-of-type(1) {
+  margin-right: 25px;
 }
 
 .results-user-details-card {
   flex: 1;
 }
 
-.results-user-details-card:nth-of-type(1) {
-  margin-right: 50px;
+.results-user-details-card:nth-of-type(2) {
+  margin-top: 25px;
+}
+
+.results-user-details-card:nth-of-type(2) > .results-user-details-card-body {
+  min-height: unset;
 }
 
 .results-user-details-card-title {
@@ -416,6 +427,13 @@ footer {
   .results-user-icon {
     width: 28px;
     height: 32.2px;
+  }
+
+  .results-user-description,
+  .results-user-details-card-body {
+    font-size: 1.6em;
+    margin-top: 5px;
+    line-height: 24px;
   }
 
   .results-cta {
@@ -505,6 +523,32 @@ footer {
 
   .results-user-icon-container {
     display: none;
+  }
+
+  .results-user-container {
+    padding: 25px 15px;
+  }
+
+  .results-user-body {
+    margin-left: 0;
+  }
+
+  .results-user-details-container {
+    display: block;
+  }
+
+  .results-user-details-card-body {
+    min-height: unset;
+    max-width: unset;
+  }
+
+  .results-user-details-column:nth-of-type(1) {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .results-user-details-card:nth-of-type(2) {
+    margin-top: 15px;
   }
 
   .results-cta {
