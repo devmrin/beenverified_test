@@ -1,59 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>BeenVerified FE Test</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>BeenVerified FE Test</title>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <!-- Fallback for IE8 -->
-      <img class="logo" src="./assets/Logo.svg" alt="Company Logo" onerror="this.onerror=null; this.src='./assets/Logo@2x.png'">
-      <ul class="menu">
-        <li class="menu-item">
-          <img class="menu-icon" src="./assets/icn_search.svg" alt="account" title="account" onerror="this.onerror=null; this.src='./assets/icn_person@2x.png'">
-        </li>
-        <li class="menu-item">
-          <img class="menu-icon" src="./assets/icn_person.svg" alt="search" title="search" onerror="this.onerror=null; this.src='./assets/icn_search@2x.png'">
-        </li>
-      </ul>
-    </nav>
-    <div class="hero-container">
-      <h1 class="heading">
-       Search Any Email Address 
-      </h1>
-      <div class="subheading">
-        <h3><span class="text-yellow text-bold">Start Here</span> - Look up the owner's name, photos and online profiles. See what you find!</h3>
+  <body>
+    <header>
+      <nav>
+        <!-- Fallback for IE8 -->
+        <img
+          class="logo"
+          src="./assets/Logo.svg"
+          alt="Company Logo"
+          onerror="this.onerror=null; this.src='./assets/Logo@2x.png'"
+        />
+        <ul class="menu">
+          <li class="menu-item">
+            <img
+              class="menu-icon"
+              src="./assets/icn_search.svg"
+              alt="account"
+              title="account"
+              onerror="this.onerror=null; this.src='./assets/icn_person@2x.png'"
+            />
+          </li>
+          <li class="menu-item">
+            <img
+              class="menu-icon"
+              src="./assets/icn_person.svg"
+              alt="search"
+              title="search"
+              onerror="this.onerror=null; this.src='./assets/icn_search@2x.png'"
+            />
+          </li>
+        </ul>
+      </nav>
+      <div class="hero-container">
+        <h1 class="heading">Search Any Email Address</h1>
+        <div class="subheading">
+          <h3>
+            <span class="text-yellow text-bold">Start Here</span> - Look up the
+            owner's name, photos and online profiles. See what you find!
+          </h3>
+        </div>
+        <form class="form">
+          <input
+            class="email-input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="EMAIL"
+          />
+          <button class="submit-btn" type="submit">GO!</button>
+        </form>
+        <p class="hero-info">
+          <img
+            class="hero-info-icon"
+            src="./assets/lock.svg"
+            alt="lock"
+            title="lock"
+            onerror="this.onerror=null; this.src='./assets/lock@2x.png'"
+          />
+          <span class="text-yellow text-bold"
+            >Enter Any Email Address. They won't be notified.</span
+          >
+        </p>
       </div>
-      <form class="form">
-        <input class="email-input" type="email" name="email" id="email" placeholder="EMAIL">
-        <button class="submit-btn" type="submit">GO!</button>
-      </form>
-      <p class="hero-info">
-        <img class="hero-info-icon" src="./assets/lock.svg" alt="lock" title="lock" onerror="this.onerror=null; this.src='./assets/lock@2x.png'">
-        <span class="text-yellow text-bold">Enter Any Email Address. They won't be notified.</span>
+    </header>
+    <main>
+      <h1 class="main-heading">Reverse Email Lookup</h1>
+      <p class="main-content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
       </p>
-    </div>
-  </header>
-  <main>
-    <h1>
-
-    </h1>
-    <p>
-
-    </p>
-    <div>
-
-    </div>
-  </main>
-  <footer>
-    <p></p>
-    <div></div>
-  </footer>
-</body>
-
+      <section class="feature-section">
+        <div class="feature-column">
+          <!-- Card-One -->
+          <div class="feature-card">
+            <div class="feature-number-container">
+              <span class="feature-number text-bold text-yellow">1</span>
+            </div>
+            <div class="feature-content">
+              <div class="feature-title text-bold text-blue">Lorem Ipsum</div>
+              <div class="feature-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+          <!-- Card-Two -->
+          <div class="feature-card">
+            <div class="feature-number-container">
+              <span class="feature-number text-bold text-yellow">2</span>
+            </div>
+            <div class="feature-content">
+              <div class="feature-title text-bold text-blue">Lorem Ipsum</div>
+              <div class="feature-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+          <!-- Card-Three -->
+          <div class="feature-card">
+            <div class="feature-number-container">
+              <span class="feature-number text-bold text-yellow">3</span>
+            </div>
+            <div class="feature-content">
+              <div class="feature-title text-bold text-blue">Lorem Ipsum</div>
+              <div class="feature-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-column">
+          <!-- Card-Four -->
+          <div class="feature-card">
+            <div class="feature-number-container">
+              <span class="feature-number text-bold text-yellow">4</span>
+            </div>
+            <div class="feature-content">
+              <div class="feature-title text-bold text-blue">Lorem Ipsum</div>
+              <div class="feature-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+          <!-- Card-Five -->
+          <div class="feature-card">
+            <div class="feature-number-container">
+              <span class="feature-number text-bold text-yellow">5</span>
+            </div>
+            <div class="feature-content">
+              <div class="feature-title text-bold text-blue">Lorem Ipsum</div>
+              <div class="feature-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+          <!-- Card-Six -->
+          <div class="feature-card">
+            <div class="feature-number-container">
+              <span class="feature-number text-bold text-yellow">6</span>
+            </div>
+            <div class="feature-content">
+              <div class="feature-title text-bold text-blue">Lorem Ipsum</div>
+              <div class="feature-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="text-gray footer-content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+      <p class="text-blue text-bold footer-terms">Terms | Privacy</p>
+    </footer>
+  </body>
 </html>
