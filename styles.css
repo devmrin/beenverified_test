@@ -30,6 +30,7 @@
   --theme-color-four: #a6953b;
   --theme-color-five: #00000033;
   --theme-color-six: #f8f8f8;
+  --theme-color-seven: #dddddd;
 
   --text-color-white: #ffffff;
   --text-color-blue: #004a80;
@@ -80,6 +81,27 @@ p {
 
 .text-bold {
   font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
+}
+
+/* Loader */
+
+.loader {
+  margin: 20px auto;
+  border: 12px solid var(--theme-color-seven);
+  border-radius: 50%;
+  border-top: 12px solid var(--theme-color-one);
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Header Section */
@@ -554,4 +576,10 @@ footer {
   .results-cta {
     padding: 40px 25px;
   }
+}
+
+/* Functional Helper */
+
+.hide {
+  display: none;
 }

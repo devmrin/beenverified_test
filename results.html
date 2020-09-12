@@ -41,11 +41,9 @@
     </header>
     <main class="results-main">
       <h1 class="main-heading">Result</h1>
-      <p class="main-content results-main-content">
-        Look at the result below to see the details of the person you’re
-        searched for.
-      </p>
-      <div class="results-user-container">
+      <p id="result-content" class="main-content results-main-content"></p>
+      <div class="loader"></div>
+      <div class="results-user-container hide">
         <div class="results-user-icon-container">
           <img
             class="results-user-icon"
@@ -165,5 +163,6 @@
       </p>
       <p class="text-blue text-bold footer-terms">Terms | Privacy</p>
     </footer>
+    <script src="./results.js"></script>
   </body>
 </html>
