@@ -29,6 +29,7 @@
   --theme-color-three: #f2da56;
   --theme-color-four: #a6953b;
   --theme-color-five: #00000033;
+  --theme-color-six: #f8f8f8;
 
   --text-color-white: #ffffff;
   --text-color-blue: #004a80;
@@ -238,7 +239,8 @@ main {
   margin-top: 0;
 }
 
-.feature-number-container {
+.feature-number-container,
+.results-user-icon-container {
   min-height: 90px;
   max-height: 90px;
   min-width: 90px;
@@ -291,6 +293,82 @@ footer {
   margin-left: 40px;
 }
 
+/* Results Page */
+.results-header {
+  padding-bottom: 20px;
+}
+
+.results-main {
+  padding-top: 30px;
+  background: var(--theme-color-six);
+}
+
+.results-main-content {
+  text-align: center;
+  font-size: 2.4em;
+  color: initial;
+}
+
+.results-user-container {
+  background: var(--theme-color-zero);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  max-width: 980px;
+  margin: 30px auto 0 auto;
+  padding: 40px 60px 40px 40px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.results-user-body {
+  margin-left: 20px;
+}
+
+.results-user-heading {
+  font-size: 3.2em;
+}
+
+.results-user-description,
+.results-user-details-card-body {
+  font-size: 1.8em;
+  margin-top: 5px;
+}
+
+.results-user-details-container {
+  margin-top: 20px;
+}
+
+.results-user-details-row {
+  display: flex;
+}
+
+.results-user-details-row:nth-of-type(2) {
+  margin-top: 20px;
+}
+
+.results-user-details-card {
+  flex: 1;
+}
+
+.results-user-details-card:nth-of-type(1) {
+  margin-right: 50px;
+}
+
+.results-user-details-card-title {
+  font-size: 2.2em;
+}
+
+.results-user-icon {
+  width: 40px;
+  height: 46px;
+}
+
+.results-cta {
+  background: var(--theme-color-one);
+  color: var(--text-color-white);
+  padding: 55px 0 105px 0;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 4.8em;
@@ -316,7 +394,8 @@ footer {
     margin-top: 30px;
   }
 
-  .feature-number-container {
+  .feature-number-container,
+  .results-user-icon-container {
     min-height: 63px;
     max-height: 63px;
     min-width: 63px;
@@ -331,6 +410,16 @@ footer {
   .feature-body {
     font-size: 1.6em;
     max-width: 264px;
+  }
+
+  /* Results Page */
+  .results-user-icon {
+    width: 28px;
+    height: 32.2px;
+  }
+
+  .results-cta {
+    padding: 55px 25px 105px 25px;
   }
 }
 
@@ -407,5 +496,18 @@ footer {
     font-size: 1.4em;
     margin: 20px 0 0 0;
     text-align: center;
+  }
+
+  /* Results Page */
+  .results-main-content {
+    text-align: left;
+  }
+
+  .results-user-icon-container {
+    display: none;
+  }
+
+  .results-cta {
+    padding: 40px 25px;
   }
 }
