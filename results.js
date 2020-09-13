@@ -103,7 +103,7 @@ function getUserData() {
 
 function updateUserResultUI(user) {
   const userName = document.querySelector("#user-name");
-  const userAge = document.querySelector("#user-age");
+  // const userAge = document.querySelector("#user-age");
   const userDescription = document.querySelector("#user-description");
   const userAddress = document.querySelector("#user-address");
   const userEmailAddress = document.querySelector("#user-email");
@@ -113,7 +113,6 @@ function updateUserResultUI(user) {
   );
 
   userName.innerText = user.first_name + " " + user.last_name;
-  userAge.innerText = 35;
   userDescription.innerText = user.description;
   userAddress.innerText = user.address;
   userEmailAddress.innerText = user.email;
