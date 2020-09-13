@@ -17,7 +17,9 @@ function init() {
     e.preventDefault();
 
     // Step1: validate email
-    const isValidEmail = EMAIL_REGEX.test(String(emailInput).toLowerCase());
+    const isValidEmail = EMAIL_REGEX.test(
+      String(emailInput.value).toLowerCase()
+    );
 
     // Step2.1: If not valid, return
     if (!isValidEmail) {
