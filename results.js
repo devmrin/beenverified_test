@@ -1,5 +1,6 @@
 "use strict";
 
+const PROXY_URL = "https://fierce-fortress-85154.herokuapp.com/";
 const EMAIL_REGEX = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 function init() {
@@ -55,7 +56,7 @@ function getUserData() {
   }
 
   // If available, make network call
-  fetch(GET_USER_URL + userEmail)
+  fetch(PROXY_URL + GET_USER_URL + userEmail)
     .then((response) => response.json())
     .then((data) => {
       if (data && data.length === 0) {
