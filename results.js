@@ -7,9 +7,24 @@ function init() {
   const resultUserContainer = document.querySelector(".results-user-container");
   const emailInput = document.querySelector("#email");
   const loader = document.querySelector(".loader");
+  const emailInputContainer = document.querySelector(".email-input-container");
+  const emailInputLabel = document.querySelector(".email-input-label");
+  const emailInputErrorMessage = document.querySelector(
+    ".email-input-error-message"
+  );
 
   // get user data
   getUserData();
+
+  // remove error from form
+  emailInput.addEventListener("focus", function () {
+    // remove error
+    // show label
+    emailInputLabel.classList.remove("hide");
+    // hide error
+    emailInputContainer.classList.remove("error-border");
+    emailInputErrorMessage.classList.add("hide");
+  });
 
   // Form Event
   const form = document.querySelector("form");
@@ -25,6 +40,11 @@ function init() {
     // Step2.1: If not valid, return
     if (!isValidEmail) {
       // update input with error state
+      // hide label
+      emailInputLabel.classList.add("hide");
+      // show error
+      emailInputContainer.classList.add("error-border");
+      emailInputErrorMessage.classList.remove("hide");
       return;
     }
 
@@ -52,7 +72,7 @@ function getUserData() {
 
   // If not available, re-direct back to homepage
   if (!userEmail) {
-    window.document.location = "./index.html";
+    window.document.location = "./";
   }
 
   // If available, make network call

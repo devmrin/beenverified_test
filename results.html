@@ -15,6 +15,7 @@
           class="logo"
           src="./assets/Logo.svg"
           alt="Company Logo"
+          onclick="window.document.location = './'"
           onerror="this.onerror=null; this.src='./assets/Logo@2x.png'"
         />
         <ul class="menu">
@@ -131,13 +132,21 @@
           </h3>
         </div>
         <form class="form">
-          <input
-            class="email-input"
-            type="email"
-            name="email"
-            id="email"
-            placeholder="EMAIL"
-          />
+          <div class="email-input-container">
+            <input
+              class="email-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="EMAIL"
+              onfocus="this.placeholder = ''"
+              onblur="this.placeholder = 'EMAIL'"
+            />
+            <label class="text-bold email-input-label" for="email">EMAIL</label>
+            <span class="email-input-error-message hide"
+              >Please add a valid email address</span
+            >
+          </div>
           <button class="submit-btn" type="submit">GO!</button>
         </form>
         <p class="hero-info">
